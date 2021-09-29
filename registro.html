@@ -5,9 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
+    <link rel="icon" type="image/png" href="images/icono.png">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
 </head>
 <body>
-    <h1>Pagina de Registro</h1>
-    <a href="index.html">Ir al inicio</a>
+    <header>
+        <h1>Página de Registro</h1>
+        <a style="border: ridge #0c0c0c 1px;" href="index.html">Ir al inicio</a>
+        <a style="border: ridge #0c0c0c 1px;" href="aspectosgenerales.html">Ir Aspectos Generales del sitio</a><hr>
+    </header>
+    <section>
+        <form action="">
+            <fieldset>
+                <legend>Formulario de Registro</legend>
+                <label for="nombre"> Nombre Usuario
+                    <input type="text" id="nombre" placeholder="Escribe tu nombre" maxlength="30">
+                </label><br>
+                <br><label for="nroDocumento"> Número de documento
+                    <input type="text" id="nroDocumento" placeholder="Escribe tu número de documento" maxlength="15">
+                </label><br>
+                <br><label for="edad"> Edad
+                    <input type="number" id="edad" placeholder="Edad" min="15" max="50">
+                </label><br>
+                <br><label for="direccion"> Dirrección
+                    <input type="text" id="direccion" placeholder="Escribe tu dirrección" >
+                </label><br>
+                <br><label for="email"> Correo Electronico
+                    <input type="email" id="email" placeholder="Escribe tu e-mail">
+                </label><br>
+                <br><label for="nroTelefono"> Número de teléfono
+                    <input type="text" id="nroTelefono" placeholder="Escribe tu número de teléfono">
+                </label><br>
+            </fieldset>
+        </form>
+    </section>
+    <footer>
+
+    </footer>
 </body>
 </html>
