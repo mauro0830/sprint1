@@ -1,6 +1,11 @@
 header {
     text-align:center
 }
+
+h2 {
+  text-align:center
+}
+
 button {
     background-color: rgba(176, 224, 230, 0.178);
     transition: background-color .5s; 
@@ -10,6 +15,49 @@ button {
 
 button:hover{
     background-color: rgb(255, 0, 13);
+}
+
+nav ul{
+  display: none;
+}
+
+nav input:checked  ~ ul{
+  display:block;
+}
+
+nav input {
+  display: none;
+}
+
+nav label {
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  user-select: none;
+}
+
+nav li {
+  display: block;
+  background: lightgrey;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  border-bottom: 1px solid grey;
+  border-radius: 5px;
+}
+
+nav label:hover{
+  background: grey;
+}
+
+nav input:checked ~ label {
+  background: lightgrey; 
 }
 
 .sidenav {
