@@ -7,6 +7,7 @@
     <title>Registro</title>
     <link rel="icon" type="image/png" href="images/icono.png">
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <script src="js/form5.js"></script>
 </head>
 <body>
     <header>
@@ -28,11 +29,11 @@
                 <br><label for="apellido"> Apellidos
                     <input type="text" id="apellido" placeholder="Escribe tu(s) apellido(s)" maxlength="30">
                 </label><br>
-                <br><label for="email"> Correo Electronico
-                    <input type="email" id="email" placeholder="Escribe tu e-mail">
+                <br><label for="campoEmail"> Correo Electronico
+                    <input type="email" id="campoEmail" placeholder="Escribe tu e-mail" required>
                 </label><br>
-                <br><label for="confirmacionEmail"> Confirmación Correo Electronico
-                    <input type="confirmacionEmail" id="confirmacionEmail" placeholder="Escribe nuevamente tu e-mail">
+                <br><label for="campoConfirmarCorreo"> Confirmación Correo Electronico
+                    <input type="email" id="campoConfirmarCorreo" placeholder="Escribe nuevamente tu e-mail" required>
                 </label><br>
                 <br><label for="nroDocumento"> Número de documento
                     <input type="text" id="nroDocumento" placeholder="Escribe tu número de documento" maxlength="15">
@@ -42,6 +43,9 @@
                 </label><br>
                 <br><label for="direccion"> Dirrección
                     <input type="text" id="direccion" placeholder="Escribe tu dirrección" >
+                </label><br>
+                <br><label for="campoPais"> Pais
+                    <input type="text" id="campoPais" placeholder="Escribe tu pais" required>
                 </label><br>
                 <br><label for="nroTelefono"> Número de teléfono
                     <input type="text" id="nroTelefono" placeholder="Escribe tu número de teléfono">
@@ -59,21 +63,12 @@
                         <option value="casado">Casado/a</option>
                         <option value="unionLibre">Unión Libre</option>
                         <option value="separado">Separado/a</option><br>
-                    </select>
+                    </select><br>
+                <br><button style="border: ridge #0c0c0c 1px;" onclick="guardarRegistro()">Guardar Registro</button><hr>
             </fieldset>
         </form>
     </section>
     <footer>
-
     </footer>
-    <script>
-        function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-        }
-
-        function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        }
-    </script>
 </body>
 </html>
