@@ -1,5 +1,4 @@
 function guardarRegistro() {
-    debugger;
     var correoConfirmado = document.getElementById("campoConfirmarCorreo").value;
     if (validar_confirmar_correo(correoConfirmado)){
         alert("Correo correcto");
