@@ -13,9 +13,9 @@ function guardarRegistro() {
     }
 };
 
-function validar_confirmar_correo(string1, string2){
-    let correoInicial =  Array.from(string1);
-    let correoValidar = Array.from(string2);
+function validar_confirmar_correo(string){
+    let correoInicial =  Array.from(document.getElementById("campoEmail").value);
+    let correoValidar = Array.from(string);
     let correoExitoso = true;
     if (correoValidar.length = correoInicial.length){
         for (i=0; i<correoValidar.length; i++){
